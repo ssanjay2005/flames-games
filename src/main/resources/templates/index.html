@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FLAMES Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="box">
+    <h1>🔥 FLAMES Game 🔥</h1>
+
+    <form action="/calculate" method="post">
+        <input type="text" name="name1" placeholder="First Name" required>
+        <input type="text" name="name2" placeholder="Second Name" required>
+        <button type="submit">Calculate</button>
+    </form>
+
+    <h2 th:if="${result != null}">
+        Result: <span th:text="${result}"></span>
+    </h2>
+</div>
+
+</body>
+</html>
